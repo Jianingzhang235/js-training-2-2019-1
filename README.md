@@ -8,6 +8,7 @@
 * Luke
 * Jianing
 * Guojing
+* Dali
 
 # Homework
 * See issues
