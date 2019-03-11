@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <script src="day2.js"></script>
+  <style type="text/css">
+    body {
+      margin-left: 10%;
+      margin-right: 20%;
+      border: 1px dotted gray;
+      padding: 10px 10px 10px 10px;
+    }
+
+    button:hover {
+      background-color: gray;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form>
+    <div class="form-field email">
+      <label>
+        <span class="field-label">Email</span>
+        <input type="text" placeholder="Your email" />
+      </label>
+    </div>
+    <div class="form-field first-name">
+      <label>
+        <span class="field-label">First name</span>
+        <input type="text" placeholder="Your given name" />
+      </label>
+    </div>
+    <div class="form-field last-name">
+      <label>
+        <span class="field-label">Last name</span>
+        <input type="text" placeholder="Your surname" />
+      </label>
+    </div>
+    <div class="form-field age">
+      <label>
+        <span class="field-label">Age</span>
+        <input type="text" placeholder="Your age" />
+      </label>
+    </div>
+    <div class="form-field gender">
+      <label>
+        <span class="field-label gender">Gender</span><br>
+        <input type="radio" name="gender" value="male" />Male<br>
+        <input type="radio" name="gender" value="female" />Female<br>
+        <input type="radio" name="gender" value="other" />Other<br>
+      </label>
+    </div>
+    <div class="form-field district">
+      <label>
+        <span class="field-label">District</span><br>
+        <select>
+          <option value="Olympia">Olympia</option>
+          <option value="Lacey">Lacey</option>
+          <option value="Tumwater">Tumwater</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="form-handlers">
+      <button type="submit" onclick="objectifyForm(formArray)">Submit</button>
+    </div>
+  </form>
+
+</body>
+
+</html>
