@@ -61,37 +61,10 @@ console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"])); // [
 
 //4) Make an array of strings of the names
 function namesOnly(arr){
-  return arr.map(obj => obj.name);// your code here
-}
-
-console.log(namesOnly([
-    {
-        name: "Angelina Jolie",
-        age: 80
-    },
-    {
-        name: "Eric Jones",
-        age: 2
-    },
-    {
-        name: "Paris Hilton",
-        age: 5
-    },
-    {
-        name: "Kayne West",
-        age: 16
-    },
-    {
-        name: "Bob Ziroll",
-        age: 100
-    }
-])); 
-// ["Angelina Jolie", "Eric Jones", "Paris Hilton", "Kayne West", "Bob Ziroll"]
-function namesOnly(arr){
   newArr = arr.map(function(obj) {
     return obj.name;
   });
-  return newArr;// your code here
+  return newArr;
 }
 
 console.log(namesOnly([
@@ -116,4 +89,69 @@ console.log(namesOnly([
         age: 100
     }
 ])); 
-// ["Angelina Jolie", "Eric Jones", "Paris Hilton", "Kayne West", "Bob Ziroll"]
+
+// 5) Make an array of strings of the names saying whether or not they can go to The Matrix
+
+function makeStrings(arr){
+  arr.map(function(obj) {
+    if(obj.age > 16) {
+      console.log(obj.name + ' can go to The Matrix');
+    } else {
+      console.log(obj.name + ' is under age!!') 
+    }
+
+  });
+}
+
+makeStrings([
+    {
+        name: "Angelina Jolie",
+        age: 80
+    },
+    {
+        name: "Eric Jones",
+        age: 2
+    },
+    {
+        name: "Paris Hilton",
+        age: 5
+    },
+    {
+        name: "Kayne West",
+        age: 16
+    },
+    {
+        name: "Bob Ziroll",
+        age: 100
+    }
+]); 
+// 6) Make an array of the names in h1s, and the ages in h2s
+function readyToPutInTheDOM(arr){
+  newArr = [];
+  arr.map(function(obj) {
+    newArr.push('<h1>' + obj.name + '</h1><h2>' + obj.age +'</h2>');
+  });
+  return newArr;
+}
+readyToPutInTheDOM([
+    {
+        name: "Angelina Jolie",
+        age: 80
+    },
+    {
+        name: "Eric Jones",
+        age: 2
+    },
+    {
+        name: "Paris Hilton",
+        age: 5
+    },
+    {
+        name: "Kayne West",
+        age: 16
+    },
+    {
+        name: "Bob Ziroll",
+        age: 100
+    }
+]); 
