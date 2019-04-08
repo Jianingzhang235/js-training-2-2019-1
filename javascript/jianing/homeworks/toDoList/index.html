@@ -3,6 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<title>ToDoList</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+		crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">>
 </head>
 <body>
@@ -11,11 +15,16 @@
 	        <h1>todos</h1>
 	        <input class="newTodo" placeholder="What needs to be done?" autofocus>
         </header>
-		<footer class="info">
-			<p>Double-click to edit a todo</p>
-			<p>Created by Jianing Zhang</p>
-		</footer>
+        <section class="main">
+            <ul class="todoList"></ul>
+		</section>
+		<footer class="footer"></footer>
     </section>
+	<footer class="info">
+		<p>Double-click to edit a todo</p>
+		<p>Created by Jianing Zhang</p>
+	</footer>
+
     <script src="app.js"></script>
 </body>
 </html>
